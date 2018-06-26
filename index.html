@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="component/jquery/jquery-3.2.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ernest Dołowy - Web Developer Z Pasją</title>
+    <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/language-panel.css">
+    <link rel="stylesheet" href="css/overlay-menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Caudex&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://image.ibb.co/eGNdCo/favicon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="component/jquery/jquery-3.2.1.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/contact-form.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $("#frmContact").on('submit', (function (e) {
+                e.preventDefault();
+                $("#mail-status").hide();
+                $('#send-message').hide();
+                $('#loader-icon').show();
+                $.ajax({
+                    url: "contact.php",
+                    type: "POST",
+                    dataType: 'json',
+                    data: {
+                        "name": $('input[name="name"]').val(),
+                        "email": $('input[name="email"]').val(),
+                        "phone": $('input[name="phone"]').val(),
+                        "content": $('textarea[name="content"]').val(),
+                        "g-recaptcha-response": $('textarea[id="g-recaptcha-response"]').val()
+                    },
+                    success: function (response) {
+                        $("#mail-status").show();
+                        $('#loader-icon').hide();
+                        if (response.type == "error") {
+                            $('#send-message').show();
+                            $("#mail-status").attr("class", "error");
+                        } else if (response.type == "message") {
+                            $('#send-message').hide();
+                            $("#mail-status").attr("class", "success");
+                        }
+                        $("#mail-status").html(response.text);
+                    },
+                    error: function () { }
+                });
+            }));
+        });
+    </script>
+</head>
+
+<body>
+    <div class="parallax background">
+        <div id="home">
+            <div>
+                <div class="welcome-box on-top">
+                    <div class="welcome-text" id="typedtext"></div>
+                </div>
+                <div class="languages fadeDown1">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><a href="pl/index.html"><div id="pl"></div></a></td>
+                                <td><a href="en/index.html"><div id="uk"></div></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/texttype.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>
+
+</html>

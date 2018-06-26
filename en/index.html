@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../component/jquery/jquery-3.2.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ernest Dołowy - Web Developer With Passion</title>
+    <link rel="stylesheet" href="../css/contact-form.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/overlay-menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Caudex&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://image.ibb.co/eGNdCo/favicon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <script src="../pl/js/jquery.min.js"></script>
+    <script src="../component/jquery/jquery-3.2.1.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="../pl/js/contact-form.js"></script>
+</head>
+
+<body>
+    <div id="start">
+        <div class="fullName on-top">
+            <a href="http://ernestdolowy.pl/">
+                <h1 class="fadeDown3 on-top" id="name">ERNEST DOŁOWY</h1>
+            </a>
+        </div>
+        </nav>
+
+
+        <header class="header">
+            <div class="burger fadeDown3" id="button-toggle">
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+            </div>
+
+            <nav class="menu" id="menu">
+                <div class="menu__brand">
+                    <a target="blank" href="">
+                        <div class="avatar">
+                            <div class="overlay"></div>
+                            <span>The color
+                                <br>of my hair
+                                <br>is natural :)</span>
+                        </div>
+                    </a>
+                    <div class="menu-contact">
+                        <p>Why do I have something on my head?
+                            <br>My photo will tell you, go ahead ;)</p>
+                    </div>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#start" class="menu__link js-anchor-link">
+                            <i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about" class="menu__link js-anchor-link">
+                            <i class="fas fa-user-alt"></i> About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#projects" class="menu__link js-anchor-link">
+                            <i class="fas fa-book-open"></i> Projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link js-anchor-link">
+                            <i class="fas fa-code"></i> Skills</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contact" class="menu__link js-anchor-link">
+                            <i class="fas fa-phone"></i> Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="parallax background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="home">
+                <a href="../pl/index.html">
+                    <div class="change-polish"></div>
+                </a>
+                <div class="welcome-box on-top">
+                    <div class="welcome-text" id="typedtext"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="float-sm">
+            <div class="fadeDown3 fl-fl float-fb">
+                <img src="../img/facebook.png" alt="">
+                <a href="https://web.facebook.com/ErnestDolowy" target="_blank"> Visit me on FB!</a>
+            </div>
+            <div class="fadeDown3 fl-fl float-li">
+                <img src="../img/linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/ernest-do%C5%82owy-463b24152/" target="_blank"> My Linkedin profile!</a>
+            </div>
+            <div class="fadeDown3 fl-fl float-gh">
+                <img src="../img/github.png" alt="">
+                <a href="https://github.com/erndol" target="_blank"> Check my Github!</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-name" id="about">
+        <div class="on-top">
+            <h1 class="section-title">Meet me!</h1>
+        </div>
+    </div>
+    <div class="parallax pllx2">
+        <main class="grid">
+            <div class="box box-photo"></div>
+            <div class="box-full box-header">
+                <h1 class="about-title">Who am I?</h1>
+            </div>
+            <div class="box box-full shadow-bottom box-content">
+                <p>I am a novice web developer. I started my work on web projects thanks to the opening and management of the
+                    server of "the hated game of childhood ". You will be able to know the name of that game during the talking
+                    with me directly.</p>
+                <p>Most of the code that I'm preparing and improving at nights is an effect of self-taught work and stubbornness
+                    against the pressure of the outside, that tries to dissuade me from my dreamed and beloved way of development,
+                    which is Web Dev, by necessity of earning or offers of future proffesions.</p>
+            </div>
+            <div class="box-header box-full shadow-bottom">
+                <h1 class="about-title">More passion</h1>
+            </div>
+            <div class="box box-full box-content shadow-bottom">
+                <p>Apart from a passion for Web Development I also like to play the piano, drums and producing electronic music.
+                    Unfortunately, all this is associated with considerable costs. That's why I hope that in a few years
+                    I will be able to continue self-development in music area by expanding equipment that I need for this,
+                    also buying electronic drums and renovating my old piano. Thanks to that in the future, after coming
+                    back from my dreamed job I will sit to my MIDI controler with more possibilities to visualize my ideas.</p>
+                <div id="heart"></div>
+            </div>
+            <div class="box-header box-full shadow-bottom">
+                <h1 class="about-title">What is my current priority?</h1>
+            </div>
+            <div class="box box-full box-content shadow-bottom">
+                <p style="padding-bottom: 3em;">In this moment the most important thing for me is to find a good internship or a junior position in the company.
+                    Through that I would like to learn new, useful things and improve my code to perfection constantly. I
+                    would be glad to work in a nice athmosphere with helpful and reliable mentor.</p>
+            </div>
+        </main>
+    </div>
+    </div>
+    <div class="section-name" id="projects">
+        <div class="on-top">
+            <h1 class="section-title">My Projects</h1>
+        </div>
+    </div>
+    <div class="parallax pllx3">
+        <div class="projects-mobile-instructions">
+            <ol>
+                <li>
+                    <p>Click on the selected project once to see the details.</p>
+                </li>
+                <li>
+                    <p>To go to the project page just click second time on the item.</p>
+                </li>
+            </ol>
+        </div>
+        <ul class="flex-container">
+            <li class="flex-item">
+                <div class="content" data-class="flipInY">
+                    <a href="http://ernestdolowy.pl/" target="_blank">
+                        <div class="content-overlay"></div>
+                        <div class="image-hover img-rotate-right">
+                            <img src="../img/projects/portfolio.png">
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="row">
+                                <h3>Project</h3>
+                                <h2>Portfolio</h2>
+                                <p>Web Developer</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/projects/portfolio-devices.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="content" data-class="flipInY">
+                    <a href="http://ernestdolowy.pl/autospa-test/" target="_blank">
+                        <div class="content-overlay"></div>
+                        <div class="image-hover img-rotate-right">
+                            <img src="../img/projects/autospa.png">
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="row">
+                                <h3>Project</h3>
+                                <h2>AutoSpa</h2>
+                                <p>Car Wash</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/projects/autospa-devices.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="content" data-class="flipInY">
+                    <a href="http://ernestdolowy.pl/spartanie/" target="_blank">
+                        <div class="content-overlay"></div>
+                        <div class="image-hover img-rotate-right">
+                            <img src="../img/projects/spartanie.png">
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="row">
+                                <h3>Project</h3>
+                                <h2>Spartanie</h2>
+                                <p>Guild's website in the game Dungeons & Dragons Neverwinter</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/projects/spartanie-devices.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="content" data-class="flipInY">
+                    <a href="http://knapskalab.eu/" target="_blank">
+                        <div class="content-overlay"></div>
+                        <div class="image-hover img-rotate-right">
+                            <img src="../img/projects/len.png">
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="row">
+                                <h3>Project</h3>
+                                <h2>LEN</h2>
+                                <p>Laboratory of Emotions' Neurobiology</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/projects/len-devices.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="content" data-class="flipInY">
+                    <a href="http://introdo.pl/" target="_blank">
+                        <div class="content-overlay"></div>
+                        <div class="image-hover img-rotate-right">
+                            <img src="../img/projects/introdo.png">
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="row">
+                                <h3>Project</h3>
+                                <h2>Introdo</h2>
+                                <p>Bookbinding shop
+                                    <br>Robert Dołowy</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/projects/introdo-devices.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="content" data-class="flipInY">
+                    <a href="http://iceperfect.pl/" target="_blank">
+                        <div class="content-overlay"></div>
+                        <div class="image-hover img-rotate-right">
+                            <img src="../img/projects/perfectice.png">
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <div class="row">
+                                <h3>Project</h3>
+                                <h2>Perfect Ice</h2>
+                                <p>Producer of ice cubes</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/projects/perfectice-devices.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="section-name" id="skills">
+        <div class="on-top">
+            <h1 class="section-title">What do I know?</h1>
+        </div>
+    </div>
+    <div class="parallax pllx4" style="padding-top: 50px;">
+        <div class="skill">
+            <h1 style="padding-bottom: 1.5em;">Stack:</h1>
+            <input type="radio" class="radio" name="progress" value="html" id="html" checked>
+            <label for="html" class="label">
+                <img src="../img/skills/html.png" alt="HTML">
+                <p>HTML</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="css" id="css">
+            <label for="css" class="label">
+                <img src="../img/skills/css.png" alt="CSS">
+                <p>CSS</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="js" id="js">
+            <label for="js" class="label">
+                <img src="../img/skills/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="php" id="php">
+            <label for="php" class="label">
+                <img src="../img/skills/php.png" alt="PHP">
+                <p>PHP</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="sql" id="sql">
+            <label for="sql" class="label">
+                <img src="../img/skills/sql.png" alt="SQL">
+                <p>SQL</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="wp" id="wp">
+            <label for="wp" class="label">
+                <img src="../img/skills/wordpress.png" alt="WordPress">
+                <p>WordPress</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="joomla" id="joomla">
+            <label for="joomla" class="label">
+                <img src="../img/skills/joomla.png" alt="Joomla">
+                <p>Joomla</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="bootstrap" id="bootstrap">
+            <label for="bootstrap" class="label">
+                <img src="../img/skills/bootstrap.png" alt="Bootstrap">
+                <p>Bootstrap</p>
+            </label>
+
+            <input type="radio" class="radio" name="progress" value="gimp" id="gimp">
+            <label for="gimp" class="label">
+                <img src="../img/skills/gimp.png" alt="GIMP">
+                <p>GIMP</p>
+            </label>
+
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+
+        </div>
+        <div class="use-also">
+            <h3>I also use:</h3>
+            <img src="../img/skills/vsc.png" alt="">
+            <img src="../img/skills/git.png" alt="">
+            <img src="../img/skills/chrome-tools.png" alt="">
+        </div>
+        <div class="priority">
+            <h3>Currently I try the most to practice:</h3>
+            <img src="../img/skills/js2.png" alt="">
+        </div>
+        <div class="skill">
+            <h1>Languages:</h1>
+            <div class="stat-levels language-infos">
+                <div class="polish-flag"></div>
+                <h1>Native</h1>
+                <div class="polish stat-bar">
+                    <span class="stat-bar-rating" role="stat-bar" style="width: 100%;">Native</span>
+                </div>
+                <div class="english-flag"></div>
+                <h1>B1</h1>
+                <div class="english stat-bar">
+                    <span class="stat-bar-rating" role="stat-bar" style="width: 70%;">B1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="section-name" id="contact">
+        <div class="on-top">
+            <h1 class="section-title">Contact</h1>
+        </div>
+    </div>
+    <div class="parallax pllx5">
+        <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/ernest-do%C5%82owy-463b24152/" class="icon-button-linkedin linkedin">
+                <i class="icon-linkedin"></i>
+                <span></span>
+            </a>
+            <a target="_blank" href="https://web.facebook.com/ErnestDolowy" class="icon-button-facebook facebook">
+                <i class="icon-facebook"></i>
+                <span></span>
+            </a>
+            <a target="_blank" href="https://github.com/erndol" class="icon-button-github github">
+                <i class="icon-github"></i>
+                <span></span>
+            </a>
+            <div class="mail-contact">
+                <a href="mailto:contact@ernestdolowy.pl,erndolowy@gmail.com">contact@ernestdolowy.pl</a>
+            </div>
+            <div id="central">
+                <div class="content">
+                    <h1 style="padding-top: 1em;">Contact Form</h1>
+                    <p>If you want to contact with me quickly just fill out the form below.</p>
+                    <div id="message" style="padding-top: 2.5em;">
+                        <form id="frmContact" action="" method="POST" novalidate="novalidate">
+                            <div class="label">* Full Name:</div>
+                            <div class="field">
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" title="Please enter your name" class="required"
+                                    aria-required="true" required>
+                            </div>
+                            <div class="label">* Email:</div>
+                            <div class="field">
+                                <input type="text" id="email" name="email" placeholder="Enter your email address" title="Please enter your email address"
+                                    class="required email" aria-required="true" required>
+                            </div>
+                            <div class="label">* Message:</div>
+                            <div class="field">
+                                <textarea id="comment-content" name="content" placeholder="Enter your message here"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6Lf2H10UAAAAANxeKOHPAEylWSADFk6RisL4Ha9z"></div>
+                            <div id="mail-status"></div>
+                            <button type="Submit" id="send-message" style="clear:both;">Send</button>
+                        </form>
+                        <div id="loader-icon" style="display:none;">
+                            <img src="../img/loader.gif" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section role="main">
+        <h1>Contact me!</h1>
+        <p>Ernest Dołowy</p>
+    </section>
+    <footer role="contentinfo">
+        <table id="social-footer" align="center">
+            <tr>
+                <td>
+                    <a target="blank" href="https://www.linkedin.com/in/ernest-do%C5%82owy-463b24152/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </td>
+                <td>
+                    <a target="blank" href="https://web.facebook.com/ErnestDolowy/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </td>
+                <td>
+                    <a target="blank" href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <h3 class="footer">&copy; 2018 ernestdolowy.pl</h3>
+        <p>Created with
+            <i class="red">&hearts;</i> by
+            <a target="blank" href="https://ernestdolowy.pl/">Ernest Dołowy</a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="../pl/js/main.js"></script>
+    <script src="js/texttype.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>
+
+</html>

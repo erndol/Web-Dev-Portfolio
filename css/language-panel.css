@@ -1,0 +1,60 @@
+
+  
+  .background {
+    background: url("../img/1.png");
+    background-size: cover;
+    padding-top: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .background {
+        background-color: #3E1E68;
+    }
+}
+
+.languages {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .languages {
+    background: #00000075;
+  }
+}
+  
+
+.languages td {
+  width: 100vh;
+}
+
+#pl {
+  background-image: url("../img/pl.png");
+  background-size: contain;
+  height: 140px;
+  widows: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ffffff65;
+  opacity: 0.5;
+}
+
+#pl:hover {
+  opacity: 1.0;
+  border: 2px solid #ffffff;
+}
+
+#uk {
+  background-image: url("../img/uk.png");
+  background-size: contain;
+  height: 140px;
+  widows: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ffffff65;
+  opacity: 0.5;
+}
+
+#uk:hover {
+  opacity: 1.0;
+  border: 2px solid #ffffff;
+}
